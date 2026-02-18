@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Dell\eclipse-workspace\Amazon_Project\docker-grid.xml</span>
+                    <span>C:\Users\Dell\eclipse-workspace\Amazon_Project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -204,7 +204,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\eclipse-workspace\Amazon_Project\docker-grid.xml</span>
+            <span class="header-content">C:\Users\Dell\eclipse-workspace\Amazon_Project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -212,24 +212,24 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;chromeTest&quot;&gt;
-    &lt;parameter name=&quot;OS&quot; value=&quot;linux&quot;/&gt;
     &lt;parameter name=&quot;bName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;OS&quot; value=&quot;Windows-11&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.TestCases.TestHomePageLogo&quot;/&gt;
       &lt;class name=&quot;com.TestCases.TestSearchProduct&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chromeTest --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;edgeTest&quot;&gt;
-    &lt;parameter name=&quot;OS&quot; value=&quot;linux&quot;/&gt;
     &lt;parameter name=&quot;bName&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;OS&quot; value=&quot;Windows-11&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.TestCases.TestHomePageLogo&quot;/&gt;
       &lt;class name=&quot;com.TestCases.TestSearchProduct&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- edgeTest --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;fireFoxTest&quot;&gt;
-    &lt;parameter name=&quot;OS&quot; value=&quot;linux&quot;/&gt;
     &lt;parameter name=&quot;bName&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;OS&quot; value=&quot;Windows-11&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.TestCases.TestHomePageLogo&quot;/&gt;
       &lt;class name=&quot;com.TestCases.TestSearchProduct&quot;/&gt;
@@ -282,32 +282,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchProduct')
 data.setCell(0, 2, 'com.TestCases.TestSearchProduct')
-data.setCell(0, 3, 14572);
+data.setCell(0, 3, 14807);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'searchProduct')
 data.setCell(1, 2, 'com.TestCases.TestSearchProduct')
-data.setCell(1, 3, 13785);
+data.setCell(1, 3, 12636);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testLogo')
 data.setCell(2, 2, 'com.TestCases.TestHomePageLogo')
-data.setCell(2, 3, 9066);
+data.setCell(2, 3, 9233);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testLogo')
 data.setCell(3, 2, 'com.TestCases.TestHomePageLogo')
-data.setCell(3, 3, 8662);
+data.setCell(3, 3, 6607);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchProduct')
-data.setCell(4, 2, 'com.TestCases.TestSearchProduct')
-data.setCell(4, 3, 6649);
+data.setCell(4, 1, 'testLogo')
+data.setCell(4, 2, 'com.TestCases.TestHomePageLogo')
+data.setCell(4, 3, 4703);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testLogo')
-data.setCell(5, 2, 'com.TestCases.TestHomePageLogo')
-data.setCell(5, 3, 2510);
+data.setCell(5, 1, 'searchProduct')
+data.setCell(5, 2, 'com.TestCases.TestSearchProduct')
+data.setCell(5, 3, 3681);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -335,85 +335,91 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestCases.TestHomePageLogo</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(linux, chrome)</span>
+                <span class="method-name">setup(Windows-11, firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setup(linux, edge)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">setup(Windows-11, chrome)</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setup(linux, firefox)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">setup(Windows-11, edge)</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testLogo</span>
-                <span class="method-start">5925 ms</span>
+                <span class="method-start">5286 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLogo</span>
-                <span class="method-start">6639 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testLogo</span>
-                <span class="method-start">9266 ms</span>
+                <span class="method-start">6901 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11784 ms</span>
+                <span class="method-start">13525 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14593 ms</span>
+                <span class="method-start">14526 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestCases.TestSearchProduct</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(linux, chrome)</span>
-                <span class="method-start">14824 ms</span>
+                <span class="method-name">setup(Windows-11, edge)</span>
+                <span class="method-start">15854 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setup(linux, firefox)</span>
-                <span class="method-start">15209 ms</span>
+                <span class="method-name">setup(Windows-11, chrome)</span>
+                <span class="method-start">17192 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestCases.TestHomePageLogo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogo</span>
+                <span class="method-start">18199 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestCases.TestSearchProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">22280 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestCases.TestHomePageLogo</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15708 ms</span>
+                <span class="method-start">22914 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestCases.TestSearchProduct</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">searchProduct</span>
-                <span class="method-start">16843 ms</span>
+                <span class="method-start">23168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class before">
-                <span class="method-name">setup(linux, edge)</span>
-                <span class="method-start">16937 ms</span>
+                <span class="method-name">setup(Windows-11, firefox)</span>
+                <span class="method-start">34153 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">searchProduct</span>
-                <span class="method-start">19460 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchProduct</span>
-                <span class="method-start">21097 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27749 ms</span>
+                <span class="method-start">35821 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31419 ms</span>
+                <span class="method-start">37091 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">43028 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33247 ms</span>
+                <span class="method-start">46710 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

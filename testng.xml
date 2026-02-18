@@ -7,6 +7,7 @@
   <test thread-count="5" name="chromeTest">
   
   <parameter name="bName" value="chrome"></parameter>
+  <parameter name="OS" value="Windows-11"></parameter>
     <classes>
       <class name="com.TestCases.TestHomePageLogo"/>
       <class name="com.TestCases.TestSearchProduct"/>
@@ -16,6 +17,7 @@
   <test thread-count="5" name="edgeTest">
   
   <parameter name="bName" value="edge"></parameter>
+  <parameter name="OS" value="Windows-11"></parameter>
     <classes>
       <class name="com.TestCases.TestHomePageLogo"/>
       <class name="com.TestCases.TestSearchProduct"/>
@@ -25,6 +27,7 @@
   <test thread-count="5" name="fireFoxTest">
   
   <parameter name="bName" value="firefox"></parameter>
+  <parameter name="OS" value="Windows-11"></parameter>
     <classes>
       <class name="com.TestCases.TestHomePageLogo"/>
       <class name="com.TestCases.TestSearchProduct"/>
