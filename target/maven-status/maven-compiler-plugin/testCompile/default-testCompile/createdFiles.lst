@@ -1,0 +1,4 @@
+com\Base\BaseTest.class
+com\TestCases\TestSearchProduct.class
+com\TestCases\TestHomePageLogo.class
+com\PageObject\HomePage.class
