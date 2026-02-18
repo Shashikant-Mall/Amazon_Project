@@ -1,5 +1,9 @@
 package com.TestCases;
 
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import com.Base.BaseTest;
@@ -12,7 +16,11 @@ public class TestSearchProduct extends BaseTest {
 	  
 	  HomePage hp = new HomePage(driver);
 	  
-	  hp.searchProduct("iPhone 16");
+	  hp.searchProduct("iPhone 16");	  
+	  
+	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	  wait.until(ExpectedConditions.titleContains("iPhone"));
+	  
 	  String pageTitle = driver.getTitle();
 	  
 	  Assert.assertTrue(pageTitle.contains("iPhone"));
