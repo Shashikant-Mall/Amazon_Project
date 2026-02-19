@@ -1,2 +1,1 @@
-This is DevOps assignment.
-The assignment is completed.
+# The Amazon DevOps assignment is completed.
